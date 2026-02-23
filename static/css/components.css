@@ -1,0 +1,70 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
+
+/* Buttons General */
+button {
+    transition: all 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Web Toggle Button */
+#web-toggle {
+    font-size: 1.3rem;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#web-toggle.active {
+    filter: grayscale(0%);
+    opacity: 1;
+    color: var(--accent-blue);
+    text-shadow: 0 0 10px rgba(41, 121, 255, 0.6);
+    transform: scale(1.1);
+}
+
+/* Send Button */
+#send-btn {
+    font-size: 1.3rem;
+    color: var(--accent-green);
+    padding: 8px;
+}
+
+#send-btn:hover {
+    color: white;
+    background: rgba(0, 230, 118, 0.1);
+    border-radius: 50%;
+}
+
+#send-btn:disabled {
+    color: #444;
+    cursor: not-allowed;
+    background: none;
+}
+
+.loading-msg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-secondary);
+    font-style: italic;
+}

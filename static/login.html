@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AI Chat</title>
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/auth.css?v=4">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Background Shapes -->
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+
+        <div class="auth-box">
+            <div class="auth-header">
+                <div class="logo-circle">
+                    <!-- لوگو جایگزین متن شد -->
+                    <img src="images/6.png" alt="Logo">
+                </div>
+                <h2>Welcome Back</h2>
+                <p>Please login to continue</p>
+            </div>
+
+            <div class="auth-tabs">
+                <button class="toggle-btn active" data-target="login">Login</button>
+                <button class="toggle-btn" data-target="register">Register</button>
+            </div>
+            
+            <form id="login-form" class="auth-form">
+                <div class="input-group">
+                    <span class="input-icon">👤</span>
+                    <input type="text" name="username" placeholder="Username" required autocomplete="username">
+                </div>
+                <div class="input-group">
+                    <span class="input-icon">🔒</span>
+                    <input type="password" name="password" placeholder="Password" required autocomplete="current-password">
+                </div>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+
+            <form id="register-form" class="auth-form" style="display: none;">
+                <div class="input-group">
+                    <span class="input-icon">👤</span>
+                    <input type="text" name="username" placeholder="Choose Username" required autocomplete="username">
+                </div>
+                <div class="input-group">
+                    <span class="input-icon">🔒</span>
+                    <input type="password" name="password" placeholder="Choose Password" required autocomplete="new-password">
+                </div>
+                <button type="submit" class="submit-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
